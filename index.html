@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guillermo Montiveros | Web Dev, Paid Media & Data</title>
+    <meta name="description" content="Portfolio de Guillermo Montiveros. Desarrollador de Software, Especialista en Paid Media, Embudos de Conversión y Ciencia de Datos en San Juan, Argentina.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            400: '#818cf8',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #090d16; color: #f8fafc; }
+        .glass { background: rgba(30, 41, 59, 0.45); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .gradient-text { background: linear-gradient(135deg, #60a5fa 0%, #a855f7 50%, #ec4899 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 w-full z-50 glass border-b border-slate-800/80">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-extrabold text-xl tracking-tight flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-indigo-500 animate-pulse"></span>
+                GM<span class="text-slate-400 font-normal text-sm hidden sm:inline">| Dev & Growth</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#pilares" class="hover:text-white transition">Qué hago</a>
+                <a href="#proyectos" class="hover:text-white transition">Proyectos & Casos</a>
+                <a href="#metodo" class="hover:text-white transition">Filosofía</a>
+                <a href="#experiencia" class="hover:text-white transition">Trayectoria</a>
+            </nav>
+            <a href="https://wa.me/5492644774889?text=Hola%20Guillermo,%20vi%20tu%20portfolio%20y%20quería%20contactarte" target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold px-4 py-2 rounded-lg transition flex items-center gap-2">
+                <i data-lucide="message-square" class="w-4 h-4"></i> Contactar
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-8 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                    <i data-lucide="zap" class="w-3.5 h-3.5"></i> Desarrollo Web + Paid Media + Ciencia de Datos
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                    Construyo sistemas digitales que <span class="gradient-text">atraen tráfico y lo convierten en ventas.</span>
+                </h1>
+                <p class="text-slate-400 text-lg sm:text-xl max-w-2xl leading-relaxed">
+                    Hola, soy <strong>Guillermo Montiveros</strong>. Uno el mundo del código con el del negocio: diseño landing pages ultrarrápidas, ejecuto campañas de Paid Media basadas en datos y automatizo el flujo hacia CRM.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#proyectos" class="bg-white text-slate-950 hover:bg-slate-200 font-semibold px-6 py-3 rounded-xl transition flex items-center gap-2">
+                        Ver Casos y Proyectos <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="https://github.com/GuilleMontiveros" target="_blank" class="glass hover:bg-slate-800/80 text-white font-medium px-6 py-3 rounded-xl transition flex items-center gap-2">
+                        <i data-lucide="github" class="w-5 h-5"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/guillermo-montiveros" target="_blank" class="glass hover:bg-slate-800/80 text-white font-medium px-6 py-3 rounded-xl transition flex items-center gap-2">
+                        <i data-lucide="linkedin" class="w-5 h-5 text-blue-400"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tarjeta Resumen Métricas / Diferencial -->
+            <div class="lg:col-span-4 glass p-6 rounded-2xl space-y-6 border border-indigo-500/20">
+                <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                    <div>
+                        <p class="text-xs text-slate-400 uppercase font-semibold">Ubicación</p>
+                        <p class="text-sm font-bold flex items-center gap-1.5 mt-0.5">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-indigo-400"></i> San Juan, Argentina
+                        </p>
+                    </div>
+                    <span class="px-2.5 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full text-xs font-medium">Disponible</span>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-3">
+                        <div class="p-2 rounded-lg bg-blue-500/10 text-blue-400"><i data-lucide="code-2" class="w-5 h-5"></i></div>
+                        <div>
+                            <h3 class="text-sm font-bold">Ingeniería & Web</h3>
+                            <p class="text-xs text-slate-400">HTML5, CSS3, JS, Python, C, SQL, WordPress y E-commerce.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="p-2 rounded-lg bg-purple-500/10 text-purple-400"><i data-lucide="bar-chart-3" class="w-5 h-5"></i></div>
+                        <div>
+                            <h3 class="text-sm font-bold">Paid Media & Growth</h3>
+                            <p class="text-xs text-slate-400">Meta Ads, Optimización de métricas, Píxel, CAPI y Embudos.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="p-2 rounded-lg bg-pink-500/10 text-pink-400"><i data-lucide="database" class="w-5 h-5"></i></div>
+                        <div>
+                            <h3 class="text-sm font-bold">Datos & Automatización CRM</h3>
+                            <p class="text-xs text-slate-400">Conexión de leads, Estadística e Inteligencia Artificial aplicada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Los 3 Pilares -->
+    <section id="pilares" class="py-20 px-6 bg-slate-900/40 border-y border-slate-800/60">
+        <div class="max-w-6xl mx-auto space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-3">
+                <h2 class="text-3xl font-bold">El Puente entre Marketing y Desarrollo</h2>
+                <p class="text-slate-400 text-sm sm:text-base">
+                    Una campaña excelente fracasa si la web es lenta. Una web increíble no sirve si nadie entra. Yo resuelvo el embudo completo de punta a punta.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Pilar 1 -->
+                <div class="glass p-7 rounded-2xl hover:border-indigo-500/40 transition space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
+                        <i data-lucide="target" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">1. Paid Media & Ad Strategy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Estructuración de campañas en Meta Ads y Google Ads orientadas a retorno real. Control de fatiga de frecuencia, testeo de ángulos creativos y optimización continua del costo por lead.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 pt-2 border-t border-slate-800">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-400"></i> Auditoría de cuentas y presupuesto</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-400"></i> Estrategia TOFU, MOFU y BOFU</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-400"></i> Píxel de Meta y API de Conversiones</li>
+                    </ul>
+                </div>
+
+                <!-- Pilar 2 -->
+                <div class="glass p-7 rounded-2xl hover:border-purple-500/40 transition space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
+                        <i data-lucide="layout" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">2. Desarrollo Web & Landings</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Diseño y programación de sitios web, catálogos interactivos con pedido directo a WhatsApp y landing pages diseñadas específicamente para maximizar la tasa de conversión.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 pt-2 border-t border-slate-800">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-purple-400"></i> Código limpio HTML, CSS y JavaScript junto a WordPress</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-purple-400"></i> Catálogos online autogestionables</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-purple-400"></i> Velocidad de carga y experiencia de usuario</li>
+                    </ul>
+                </div>
+
+                <!-- Pilar 3 -->
+                <div class="glass p-7 rounded-2xl hover:border-pink-500/40 transition space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400">
+                        <i data-lucide="cpu" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">3. Ciencia de Datos & CRM</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Integración técnica entre los formularios de pauta y los sistemas de gestión comercial CRM. Análisis estadístico de embudos para calificar prospectos y alimentar al algoritmo.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 pt-2 border-t border-slate-800">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-400"></i> Análisis con Python y Estadística</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-400"></i> Precalificación de leads para equipos de venta</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-400"></i> Automatización comercial y seguimiento</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos y Casos de Estudio -->
+    <section id="proyectos" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto space-y-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                <div>
+                    <span class="text-indigo-400 text-xs font-bold uppercase tracking-widest">Trabajo Aplicado</span>
+                    <h2 class="text-3xl font-bold mt-1">Proyectos Web & Soluciones</h2>
+                </div>
+                <p class="text-slate-400 text-sm max-w-md">
+                    Combinación de desarrollos en producción y plataformas orientadas a rendimiento comercial.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Proyecto 1: Carnes Guerra -->
+                <div class="glass rounded-2xl overflow-hidden flex flex-col justify-between border border-slate-800 hover:border-indigo-500/40 transition">
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-1 text-xs font-semibold bg-indigo-500/10 text-indigo-400 rounded-md">E-Commerce & WhatsApp</span>
+                            <i data-lucide="shopping-bag" class="w-5 h-5 text-slate-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Carnes Guerra — Catálogo Online</h3>
+                        <p class="text-slate-400 text-sm">
+                            Plataforma de pedidos interactiva pensada para reducir la fricción de compra. El cliente arma su carrito en segundos y el pedido llega estructurado directo al WhatsApp del comercio.
+                        </p>
+                    </div>
+                    <div class="px-6 py-4 bg-slate-900/60 border-t border-slate-800 flex items-center justify-between">
+                        <span class="text-xs text-slate-400">HTML • CSS • JS • UX</span>
+                        <a href="https://carnesguerra.online/" target="_blank" class="text-indigo-400 hover:text-indigo-300 text-sm font-semibold flex items-center gap-1">
+                            Ver sitio <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: Trias Digital -->
+                <div class="glass rounded-2xl overflow-hidden flex flex-col justify-between border border-slate-800 hover:border-purple-500/40 transition">
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-1 text-xs font-semibold bg-purple-500/10 text-purple-400 rounded-md">Soluciones B2B</span>
+                            <i data-lucide="globe" class="w-5 h-5 text-slate-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Trias — Desarrollo & Digitalización</h3>
+                        <p class="text-slate-400 text-sm">
+                            Iniciativa propia enfocada en digitalizar negocios locales y regionales en Cuyo, desde páginas de aterrizaje rápidas hasta sistemas de captación de clientes potenciales.
+                        </p>
+                    </div>
+                    <div class="px-6 py-4 bg-slate-900/60 border-t border-slate-800 flex items-center justify-between">
+                        <span class="text-xs text-slate-400">Frontend • Conversión • SEO</span>
+                        <a href="https://guillemontiveros.github.io/trias/" target="_blank" class="text-purple-400 hover:text-purple-300 text-sm font-semibold flex items-center gap-1">
+                            Explorar <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodología (Algoritmo de 5 Pasos) -->
+    <section id="metodo" class="py-16 px-6 bg-indigo-950/20 border-y border-indigo-500/10">
+        <div class="max-w-6xl mx-auto space-y-8">
+            <div class="max-w-2xl">
+                <span class="text-indigo-400 text-xs font-bold uppercase tracking-widest">Mentalidad de Ingeniería</span>
+                <h2 class="text-2xl sm:text-3xl font-bold mt-1">Mi Algoritmo de Optimización en 5 Pasos</h2>
+                <p class="text-slate-400 text-sm mt-2">
+                    Aplico principios de ingeniería y manufactura esbelta a las campañas publicitarias y al desarrollo de software:
+                </p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                <div class="glass p-5 rounded-xl">
+                    <span class="text-indigo-400 font-extrabold text-lg">01.</span>
+                    <h4 class="font-bold text-sm mt-1">Cuestionar</h4>
+                    <p class="text-xs text-slate-400 mt-1">Analizar métricas reales antes de asumir qué funciona.</p>
+                </div>
+                <div class="glass p-5 rounded-xl">
+                    <span class="text-indigo-400 font-extrabold text-lg">02.</span>
+                    <h4 class="font-bold text-sm mt-1">Eliminar desperdicio</h4>
+                    <p class="text-xs text-slate-400 mt-1">Pausar anuncios fatigados, recortar líneas caras y quitar fricción en formularios.</p>
+                </div>
+                <div class="glass p-5 rounded-xl">
+                    <span class="text-indigo-400 font-extrabold text-lg">03.</span>
+                    <h4 class="font-bold text-sm mt-1">Simplificar</h4>
+                    <p class="text-xs text-slate-400 mt-1">Clarificar la oferta en el anuncio y en la landing page para acelerar la acción.</p>
+                </div>
+                <div class="glass p-5 rounded-xl">
+                    <span class="text-indigo-400 font-extrabold text-lg">04.</span>
+                    <h4 class="font-bold text-sm mt-1">Acelerar ciclos</h4>
+                    <p class="text-xs text-slate-400 mt-1">Iteración rápida de creativos e impacto inmediato en el negocio.</p>
+                </div>
+                <div class="glass p-5 rounded-xl">
+                    <span class="text-indigo-400 font-extrabold text-lg">05.</span>
+                    <h4 class="font-bold text-sm mt-1">Automatizar</h4>
+                    <p class="text-xs text-slate-400 mt-1">Conectar formularios y landings directo al CRM o WhatsApp una vez validado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia y Educación -->
+    <section id="experiencia" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+            <!-- Experiencia -->
+            <div class="space-y-6">
+                <h2 class="text-2xl font-bold flex items-center gap-2">
+                    <i data-lucide="briefcase" class="w-6 h-6 text-indigo-400"></i> Experiencia Relevante
+                </h2>
+                <div class="space-y-6 border-l-2 border-slate-800 pl-6">
+                    <div class="relative">
+                        <span class="w-3 h-3 rounded-full bg-indigo-500 absolute -left-[31px] top-1.5"></span>
+                        <span class="text-xs text-indigo-400 font-semibold">Actualidad</span>
+                        <h3 class="text-lg font-bold">Desarrollador Web & Consultor</h3>
+                        <p class="text-xs text-slate-400 mb-2">Proyectos Independientes / Trias</p>
+                        <p class="text-sm text-slate-300">Creación de plataformas web, catálogos online y embudos comerciales para empresas regionales en San Juan y Cuyo.</p>
+                    </div>
+                    <div class="relative">
+                        <span class="w-3 h-3 rounded-full bg-slate-700 absolute -left-[31px] top-1.5"></span>
+                        <span class="text-xs text-slate-400 font-semibold">Ene 2024 - Feb 2025</span>
+                        <h3 class="text-lg font-bold">Ejecutivo Comercial & Gestión CRM</h3>
+                        <p class="text-xs text-slate-400 mb-2">Voicenter S.A. para Claro Argentina y Uruguay</p>
+                        <p class="text-sm text-slate-300">Comercialización digital, manejo intensivo de sistemas CRM para seguimiento de leads, embudos de conversión y cumplimiento de objetivos mensuales.</p>
+                    </div>
+                    <div class="relative">
+                        <span class="w-3 h-3 rounded-full bg-slate-700 absolute -left-[31px] top-1.5"></span>
+                        <span class="text-xs text-slate-400 font-semibold">Oct 2023 - Ene 2024</span>
+                        <h3 class="text-lg font-bold">Especialista en Marketing Digital & Paid Ads</h3>
+                        <p class="text-xs text-slate-400 mb-2">Golden Lions</p>
+                        <p class="text-sm text-slate-300">Diseño, implementación y optimización de pauta publicitaria en canales digitales, analizando métricas de conversión y retorno de inversión.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Educación y Certificaciones -->
+            <div class="space-y-6">
+                <h2 class="text-2xl font-bold flex items-center gap-2">
+                    <i data-lucide="graduation-cap" class="w-6 h-6 text-purple-400"></i> Formación & Certificaciones
+                </h2>
+                <div class="space-y-4">
+                    <div class="glass p-5 rounded-xl">
+                        <span class="text-xs text-purple-400 font-semibold">Formación Superior En Curso</span>
+                        <h3 class="font-bold text-base mt-0.5">Ciencias de la Computación & Ciencia de Datos</h3>
+                        <p class="text-xs text-slate-400 mt-1">Formación universitaria y técnica en programación, estructuras de datos, estadística e inteligencia artificial.</p>
+                    </div>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="glass p-4 rounded-xl">
+                            <h4 class="font-bold text-sm">Python for AI & Data</h4>
+                            <p class="text-xs text-slate-400 mt-1">Certificación IBM</p>
+                        </div>
+                        <div class="glass p-4 rounded-xl">
+                            <h4 class="font-bold text-sm">Estadística para Análisis de Datos</h4>
+                            <p class="text-xs text-slate-400 mt-1">Certificación UTN</p>
+                        </div>
+                        <div class="glass p-4 rounded-xl">
+                            <h4 class="font-bold text-sm">Práctica Profesional en IA</h4>
+                            <p class="text-xs text-slate-400 mt-1">Instituto Técnico TecLab</p>
+                        </div>
+                        <div class="glass p-4 rounded-xl">
+                            <h4 class="font-bold text-sm">Inglés Técnico</h4>
+                            <p class="text-xs text-slate-400 mt-1">Nivel Intermedio Avanzado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / CTA -->
+    <footer class="py-16 px-6 border-t border-slate-800 bg-slate-950 text-center">
+        <div class="max-w-3xl mx-auto space-y-6">
+            <h2 class="text-3xl font-extrabold">¿Hablamos de tu próximo proyecto o búsqueda?</h2>
+            <p class="text-slate-400 text-sm sm:text-base">
+                Estoy disponible tanto para integrarme a equipos de agencias y software factories en modalidad híbrida en San Juan o remota como para desarrollos freelance.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 pt-2">
+                <a href="https://wa.me/5492644774889" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-6 py-3 rounded-xl transition flex items-center gap-2">
+                    <i data-lucide="phone" class="w-4 h-4"></i> WhatsApp Directo
+                </a>
+                <a href="mailto:guillermomontiveros02@gmail.com" class="glass hover:bg-slate-800 text-white font-semibold px-6 py-3 rounded-xl transition flex items-center gap-2">
+                    <i data-lucide="mail" class="w-4 h-4"></i> guillermomontiveros02@gmail.com
+                </a>
+            </div>
+            <p class="text-xs text-slate-600 pt-8">
+                © 2026 Guillermo Luis Montiveros • Hecho con código limpio en San Juan, Argentina.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
