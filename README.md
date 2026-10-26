@@ -2,7 +2,7 @@
 
 > Portfolio profesional y casos de estudio enfocados en el desarrollo web, la adquisición digital de clientes (Paid Media) y la analítica orientada a resultados de negocio.
 
-🔗 **Portfolio en vivo:** https://guillemontiveros.github.io/Portfolio/)
+🔗 **Portfolio en vivo:** https://guillemontiveros.github.io/Portfolio/
 
 ---
 
