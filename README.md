@@ -6,7 +6,7 @@
 
 ---
 
-## 🛠️ ¿Qué hago? (Perfil Híbrido)
+## 🛠️ ¿Qué hago?
 
 Combino la lógica del desarrollo de software y la ciencia de datos con la estrategia comercial y el marketing digital:
 
